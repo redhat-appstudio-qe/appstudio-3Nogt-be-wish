@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-qxfa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-service-happ-tenant/appstudio/dc-metro-map-qxfa@sha256:0340ed3dccff76d8cabd8e5256b913bcef24d8c7d05bddf4fb2c9ecac01b1dca
+        name: my-nodejs
+        resources: {}
+status: {}
